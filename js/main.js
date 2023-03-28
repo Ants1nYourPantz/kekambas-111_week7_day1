@@ -120,3 +120,46 @@ console.log(person.languages.length)
 
 //  Clear the console
 console.clear();
+
+
+// Variable Declaration - var vs let vs const
+// Variable Hoisting
+var myNewVariable = 'New variable'
+
+console.log(myNewVariable);
+
+var myNewVariable = 'New variable'
+
+// let
+// Declares a Block-Scoped local variable, optional value
+
+// console.log(myCountry); Must be after the 'let' statement
+
+let aCountry = 'United States';
+
+console.log(aCountry);
+
+if (true){
+    var aState = 'New Jersey'; //globally-scoped
+    let aCity = 'Holland'; //block-scoped
+    console.log(aCity, aState, aCountry);
+};
+
+// console.log(aCity, aState, aCountry); //aCity is not defined error
+
+// const - similar to let (block-scoped)
+// 2 differences 1. Needs a value when declared. 2. Cannot be reassigned.
+
+if (true){
+    let myFavColor = 'blue';
+    console.log(myFavColor);
+    myFavColor = 'red';
+    console.log(myFavColor);
+
+    const myLastName = 'Romano';
+    console.log(myLastName);
+    // myLastName = 'Lincon';
+    // console.log(myLastName);
+}
+// console.log(myLastName); //myLastName wont work outside the block scope
+
