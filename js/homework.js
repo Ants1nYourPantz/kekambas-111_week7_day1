@@ -23,9 +23,21 @@ for (let i = 0; i < exerciseOneArr.length; i++) {
         console.log(num)
     };
 };
-
-
 // Don't quite understand this! Needed to use ChatGPT to help explain but I'm still not getting the correct answer.
+
+for (let num of exerciseOneArr) {
+    if (num % 3 === 0 && num % 5 === 0){
+        console.log('FizzBuzz')
+    } else if (num % 3 === 0){
+        console.log('Fizz')
+    } else if (num % 5 === 0){
+        console.log('Buzz')
+    } else {
+        console.log(num);
+    };
+};
+
+
 
 //============Exercise #2 ============//
 /*
@@ -46,22 +58,21 @@ Note: if there is nothing to sum, the sum is default to 0.
 
 let numbers1 = [10, 12, -9, 3, -1, 0, 15] 
 
-let sum1 = 0;
-for (let i = 0; i < numbers1.length; i++) {
-  if (numbers1[i] > 0) {
-    sum1 += numbers1[i];
-  }
+
+for (let num of numbers1){
+    if (num > 0){
+        numbers1 += num
+    }
 }
 
-console.log(sum1);
+console.log(numbers1);
 
 let numbers2 = [3, 5, 7, 9, -10, 2, -22, -1] 
 
-let sum2 = 0;
-for (let i = 0; i < numbers2.length; i++) {
-  if (numbers2[i] > 0) {
-    sum2 += numbers2[i];
-  }
+for (let num of numbers2){
+    if (num > 0){
+        numbers2 += num
+    }
 }
 
-console.log(sum2);
+console.log(numbers2);
